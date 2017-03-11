@@ -1,3 +1,47 @@
-page-home {
-
+@font-face {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Avenir"), local("Avenir-Book"),  
+    url("../assets/fonts/avenir-book.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Avenir Black";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Avenir Black"), local("Avenir-Black"), 
+    url("../assets/fonts/avenir-black.ttf") format("truetype");
+}
+
+page-home {
+}
+
+ion-title {
+    text-align: center;
+    color: #0088cc;
+}
+
+.background {
+    background-color: #0088cc;
+}
+
+p, #month {
+    text-align: CENTER;
+    color: white;
+}
+
+#calendar {
+    background: #f7f7f7;
+    border-radius: 10px; 
+}
+
+.col {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+//    background: #0088cc; 
+//    border-radius: 30px; 
+}
+
+
