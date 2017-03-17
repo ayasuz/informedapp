@@ -8,5 +8,9 @@
   <p>
     Settings.
   </p>
+  <ion-item>
+	  <ion-label>Time</ion-label>
+	  <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
   <button primary (click)="schedule()">Schedule</button>
 </ion-content>
