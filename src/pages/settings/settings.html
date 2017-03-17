@@ -5,12 +5,53 @@
 </ion-header>
 
 <ion-content padding>
-  <p>
-    Settings.
-  </p>
-  <ion-item>
-	  <ion-label>Time</ion-label>
-	  <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
-  </ion-item>
-  <button primary (click)="schedule()">Schedule</button>
+	<ion-list>
+
+	  <ion-item>
+	    <ion-label stacked>Type/Brand of pill</ion-label>
+	    <ion-input type="text" value=""></ion-input>
+	  </ion-item>
+
+	  <ion-list radio-group>
+		  <ion-list-header>
+		    Pill Pack Number
+		  </ion-list-header>
+
+		  <ion-item>
+		    <ion-label>21</ion-label>
+		    <ion-radio checked="true" value="21"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>28</ion-label>
+		    <ion-radio value="28"></ion-radio>
+		  </ion-item>
+
+		</ion-list>
+
+		<ion-item>
+	    <ion-label stacked>How long have you been on this pill?</ion-label>
+	    <ion-input type="text" value=""></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+		  <ion-label stacked> Record side effects daily</ion-label>
+		  <ion-toggle checked="true"></ion-toggle>
+		</ion-item>
+
+	  <ion-item>
+		  <ion-label stacked>Set Reminder Time</ion-label>
+		  <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+	  </ion-item>
+	  <!-- <button primary (click)="schedule()">Schedule</button> -->
+
+	  <ion-item>
+	    <ion-label stacked>Set Reminder Text</ion-label>
+	    <ion-input placeholder="Time to take a pill!" type="text" value=""></ion-input>
+	  </ion-item>
+
+	</ion-list>
+
+	<button ion-button outline class="right">Cancel</button><button ion-button class="right">Save</button>
+  
 </ion-content>

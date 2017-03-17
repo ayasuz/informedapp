@@ -24536,3 +24536,7 @@ p, #month {
   width: 100%;
   text-align: center;
 }
+
+.right {
+  text-align: right;
+}
